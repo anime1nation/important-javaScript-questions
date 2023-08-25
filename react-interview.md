@@ -46,10 +46,26 @@
 ## 7. what are keys in React?
 - **In React, a key is a special string attribute that you need to include when creating lists of elements. Keys are used to identify which items in the list have changed, updated, or deleted. This is important for React to be able to efficiently update the DOM when the state of your application changes.**
 - **Keys must be unique within their parent component. This means that you cannot use the same key for two different elements in the same parent component. You can, however, use the same key for elements in different parent components.**
-- 
-  ```const numbers = [1, 2, 3, 4, 5];
- const listItems = numbers.map((number) => (
+
+
+  ```
+  const numbers = [1, 2, 3, 4, 5];
+  const listItems = numbers.map((number) => (
   <li key={number}>
     {number}
   </li>
-));```
+  ));
+
+## 8. What are react hooks?
+- **React Hooks are a new feature introduced in React 16.8 that allow you to use state and other React features in functional components. Functional components are JavaScript functions that return a React element. They are often used to make your code more concise and reusable.**
+- **Before hooks, you had to use classes to use state and other React features. Classes are more complex than functional components, and they can be more difficult to test.**
+- **Hooks make it easier to use state and other React features in functional components. They are also easier to test than classes.**
+  ### There are many different hooks available, but some of the most common ones include:
+    - **useState:** This hook lets you manage state in a functional component.
+    - **useEffect:** This hook lets you perform side effects, such as fetching data from an API.
+    - **useContext:** This hook lets you access a context object from a functional component.
+    - **useReducer:** This hook is an alternative to useState for managing complex state.
+ 
+## 9. What is State in React?
+ - **
+
