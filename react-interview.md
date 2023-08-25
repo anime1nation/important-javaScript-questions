@@ -42,3 +42,14 @@
   - They are immutable, which makes React applications more efficient.
   - They are virtual, which allows React to perform optimizations.
   - They are the foundation of React applications.
+
+## 7. what are keys in React?
+- **In React, a key is a special string attribute that you need to include when creating lists of elements. Keys are used to identify which items in the list have changed, updated, or deleted. This is important for React to be able to efficiently update the DOM when the state of your application changes.**
+- **Keys must be unique within their parent component. This means that you cannot use the same key for two different elements in the same parent component. You can, however, use the same key for elements in different parent components.**
+- 
+  ```const numbers = [1, 2, 3, 4, 5];
+ const listItems = numbers.map((number) => (
+  <li key={number}>
+    {number}
+  </li>
+));```
